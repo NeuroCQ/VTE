@@ -102,8 +102,6 @@ p_auc <- make_metric_plot(
 
 #---------------------------------------------------------------
 # 2. Accuracy plot
-# Use Youden-threshold metrics if you want clinically actionable cutoff
-# or switch to Accuracy_default if preferred
 #---------------------------------------------------------------
 p_acc <- make_metric_plot(
   data = df,
