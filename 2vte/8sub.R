@@ -22,9 +22,6 @@ raw$row_id <- rownames(raw)
 cat("\nCheck VTE_clinical values:\n")
 print(table(raw$VTE_clinical, useNA = "always"))
 
-# In your file, VTE_clinical is coded as 0/1
-# 1 = clinically symptomatic VTE
-# 0 = not clinically symptomatic
 raw$truth_symptomatic <- ifelse(raw$VTE_clinical == 1, "Yes", "No")
 raw$truth_symptomatic <- factor(raw$truth_symptomatic, levels = c("No", "Yes"))
 
