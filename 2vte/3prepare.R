@@ -26,7 +26,7 @@ data$vte_class[data$vte_class == "No VTE"] <- "No"
 
 data$OS <- NULL
 data$OSTime <- NULL
-# data$VTE_clinical <- NULL   # Keep this column only for sensitivity analysis; do not use it for modeling
+# data$VTE_clinical <- NULL  
 data$postop_functional_complication <- NULL
 
 names(data)[1] <- "VTE"
